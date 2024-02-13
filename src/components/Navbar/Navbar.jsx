@@ -15,55 +15,35 @@ const Navbar = () => {
     <div className='navbar'>
       <img src={logo} alt="Logo" />
 
-      {/* Navigation Menu along with button and red line added */}
-      {/* <ul className="nav-menu">
-        <li className={activeItem === 0 ? 'active' : ''} onClick={() => handleItemClick(0)}>
-          <a href="#home">Home</a>
-          {activeItem === 0 && <hr />}
-        </li>
-        <li className={activeItem === 1 ? 'active' : ''} onClick={() => handleItemClick(1)}>
-          <a href="#about">About us</a>
-          {activeItem === 1 && <hr />}
-        </li>
-        <li className={activeItem === 2 ? 'active' : ''} onClick={() => handleItemClick(2)}>
-          <a href="#services">Services</a>
-          {activeItem === 2 && <hr />}
-        </li>
-        <li className={activeItem === 3 ? 'active' : ''} onClick={() => handleItemClick(3)}>
-          <a href="#contact">Contact us</a>
-          {activeItem === 3 && <hr />}
-        </li>
-        <li className={activeItem === 4 ? 'active' : ''} onClick={() => handleItemClick(4)}>
-          <a href="#pages">Pages</a>
-          {activeItem === 4 && <hr />}
-        </li>
-      </ul> */}
-
-      {/* Login button */}
+      {/* list of buttons in the Navbar*/}
       <div className='Login'>
         <ul className="nav-menu">
           <li className={activeItem === 0 ? 'active' : ''} onClick={() => handleItemClick(0)}>
-            <a href="#home">Home</a>
+            <a href="home">Home</a>
             {activeItem === 0 && <hr />}
           </li>
           <li className={activeItem === 1 ? 'active' : ''} onClick={() => handleItemClick(1)}>
-            <a href="#about">About us</a>
+            <a href="about">About us</a>
             {activeItem === 1 && <hr />}
           </li>
           <li className={activeItem === 2 ? 'active' : ''} onClick={() => handleItemClick(2)}>
-            <a href="#services">Services</a>
+            <a href="services">Services</a>
             {activeItem === 2 && <hr />}
           </li>
           <li className={activeItem === 3 ? 'active' : ''} onClick={() => handleItemClick(3)}>
-            <a href="#contact">Contact us</a>
+            <a href="contact">Contact us</a>
             {activeItem === 3 && <hr />}
           </li>
-          <li className={activeItem === 4 ? 'active' : ''} onClick={() => handleItemClick(4)}>
-            <a href="#pages">Pages</a>
+
+          <li className={activeItem === 4 ? 'active' : ''} onClick={() => handleItemClick(5)}>
+            <a href="myProfile">My Profile</a>
             {activeItem === 4 && <hr />}
           </li>
+          
         </ul>
-        <button>Login</button>
+        <a href="/Login">
+          <button>Login</button>
+        </a>
       </div>
     </div>
   );

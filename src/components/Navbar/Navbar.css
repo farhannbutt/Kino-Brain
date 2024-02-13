@@ -2,6 +2,7 @@
 
 .navbar {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 10px; /* Add padding as needed */
@@ -49,6 +50,7 @@
     padding: 10px 20px;
     cursor: pointer;
     height: 50px;
+    margin-right: 50px;
     /* Add more styles as needed */
   }
   .nav-menu hr{
